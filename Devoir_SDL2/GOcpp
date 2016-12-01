@@ -1,0 +1,237 @@
+#include "GO.h"
+
+
+//Constructeur
+GO::GO()
+{
+	this->life = 0;
+	this->invincibleTimer = 0;
+	this->x = 0;
+	this->y = 0;
+	this->checkpointActif = 0;
+	this->respawnX = 0;
+	this->respawnY = 0;
+	this->frameNumber = 0;
+	this->frameTimer = 0;
+	this->frameMax = 0;
+	this->etat = 0;
+	this->direction = 0;
+	this->onGround = 0;
+	this->timerMort = 0;
+	this->dirX = 0;
+	this->dirY = 0;
+	this->saveX = 0;
+	this->saveY = 0;
+	this->jump = 0;
+	this->beginX = 0;
+	this->beginY = 0;
+	this->type = 0;
+	this->player_dessus = 0;
+}
+
+//Accesseurs et mutateurs
+int GO::getLife()const {
+	return this->life;
+ };
+
+void GO::setLife(int value) { 
+	this->life = value; 
+};
+
+int GO::getInvincibleTimer()const { 
+	return this->invincibleTimer; 
+};
+
+void GO::setInvincibleTimer(int value) { 
+	this->invincibleTimer = value;
+};
+
+int GO::getX()const { 
+	return this->x; 
+};
+
+void GO::setX(int value) { 
+	this->x = value; 
+};
+
+int GO::getY()const { 
+	return this->y; 
+};
+	
+void GO::setY(int value) {
+	this->y = value; 
+};
+
+int GO::getH()const { 
+	return this->h; 
+};
+
+void GO::setH(int value) { 
+	this->h = value; 
+};
+
+int GO::getW()const { 
+	return this->w; 
+};
+
+void GO::setW(int value) { 
+	this->w = value; 
+};
+
+int GO::getCheckpointActif()const { 
+	return this->checkpointActif; 
+};
+
+void GO::setCheckpointActif(int value) { 
+	this->checkpointActif = value;
+};
+
+int GO::getRespawnX()const { 
+	return this->respawnX; 
+};
+	
+void GO::setRespawnX(int value) { 
+	this->respawnX = value; 
+};
+
+int GO::getRespawnY()const { 
+	return this->respawnY;
+};
+
+void GO::setRespawnY(int value) {
+	this->respawnY = value; 
+};
+
+int GO::getFrameNumber()const { 
+	return this->frameNumber;
+};
+
+void GO::setFrameNumber(int value) { 
+	this->frameNumber = value; 
+};
+
+int GO::getFrameTimer()const { 
+	return this->frameTimer;
+};
+
+void GO::setFrameTimer(int value) { 
+	this->frameTimer = value; 
+};
+
+int GO::getFrameMax()const { 
+	return this->frameMax; 
+};
+
+void GO::setFrameMax(int value) {
+	this->frameMax = value; 
+};
+
+int GO::getEtat()const { 
+	return this->etat; 
+};
+
+void GO::setEtat(int value) { 
+	this->etat = value; 
+};
+
+int GO::getDirection()const { 
+	return this->direction; 
+};
+
+void GO::setDirection(int value) { 
+	this->direction = value; 
+};
+
+int GO::getOnGround()const { 
+	return this->onGround; 
+};
+
+void GO::setOnGround(int value) { 
+	this->onGround = value; 
+};
+
+int GO::getTimerMort()const { 
+	return this->timerMort; 
+};
+
+void GO::setTimerMort(int value) { 
+	this->timerMort = value; 
+};
+
+float GO::getDirX()const { 
+	return this->dirX; 
+};
+
+void GO::setDirX(float value) { 
+	this->dirX = value; 
+};
+
+float GO::getDirY()const { 
+	return this->dirY; 
+};
+
+void GO::setDirY(float value) { 
+	this->dirY = value; 
+};
+
+int GO::getSaveX()const { 
+	return this->saveX; 
+};
+
+void GO::setSaveX(int value) { 
+	this->saveX = value; 
+};
+
+int GO::getSaveY()const { 
+	return this->saveY; 
+};
+
+void GO::setSaveY(int value) {
+	this->saveY = value; 
+};
+
+int GO::getJump()const { 
+	return this->jump; 
+};
+
+void GO::setJump(int value) { 
+	this->jump = value; 
+};
+
+int GO::getBeginX()const { 
+	return this->beginX; 
+};
+
+void GO::setBeginX(int value) { 
+	this->beginX = value; 
+};
+
+int GO::getBeginY()const { 
+	return this->beginY; 
+};
+
+void GO::setBeginY(int value) { 
+	this->beginY = value; 
+};
+
+int GO::getType()const { 
+	return this->type; 
+};
+
+void GO::setType(int value) { 
+	this->type = value; 
+};
+
+int GO::getPlayer_Dessus()const { 
+	return this->player_dessus;
+};
+
+void GO::setPlayer_Dessus(int value) { 
+	this->player_dessus = value; 
+};
+
+//Destructeur
+GO::~GO()
+{
+
+}
